@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ a.active{
+    color:red;
+    
+}
+.my-container{
+    @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20
+  }
+  .btn-primary{
+    @apply  font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full border-transparent border-2  text-gray-700 hover:bg-cyan-400 bg-cyan-200
+  }
+
+  .btn-outlined{
+    @apply  font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full  text-gray-700 hover:bg-cyan-400 hover:border-transparent border-2 border-cyan-200
+  }
+.buy-btn{
+    @apply bg-slate-400 px-3 py-1 rounded mt-2 inline-block hover:bg-slate-600 hover:text-white duration-300
+}
+.home-container{
+    @apply grid grid-cols-1 md:grid-cols-4 gap-2
+}
+.product-container{
+    @apply grid col-span-3 grid-cols-1 md:grid-cols-4 gap-2
+};
+
+@layer utilities{
+    .title-text{
+      @apply animate-pulse bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 bg-clip-text text-transparent font-black
+    }
+  }

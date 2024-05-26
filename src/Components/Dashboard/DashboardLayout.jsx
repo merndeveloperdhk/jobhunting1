@@ -22,7 +22,7 @@ const DashboardLayout = () => {
       {/* Sidebar content here */}
       <li><Link >Dashboard Home</Link></li>
       <li><Link  to= "allProducts">All Products</Link></li>
-      <li><Link>Add Products</Link></li>
+      <li><Link  to= "addProducts">Add Products</Link></li>
       <li><Link to="/">Home</Link></li>
     </ul>
   

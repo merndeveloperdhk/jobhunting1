@@ -3,7 +3,7 @@ import noImage from '../../assets/No Image.jpg'
 import { Link } from 'react-router-dom';
 
 const ProductCard = ({ tshirt, handleAddToCart }) => {
-  const { _id, name, picture, price, category } = tshirt
+  const { _id, name, picture, price, category } = tshirt;
   return (
     <div className='bg-gray-100 p-6 rounded shadow-lg'>
       <img

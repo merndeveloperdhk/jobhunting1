@@ -18,6 +18,7 @@ import Cart from './Components/Cart/Cart.jsx';
 import DashboardLayout from './Components/Dashboard/DashboardLayout.jsx';
 import AllProducts from './Components/Dashboard/AllProducts.jsx';
 import Details from './Components/Details/Details.jsx';
+import AddProduct from './Components/Dashboard/AddProduct.jsx';
 
 
 const router = createBrowserRouter([
@@ -67,6 +68,11 @@ const router = createBrowserRouter([
         path:'allProducts',
         element:<AllProducts></AllProducts>,
         loader: () => fetch('http://localhost:3000/tShirts/')
+      },
+      {
+        path:'addProducts',
+        element:<AddProduct></AddProduct>
+        
       }
     ]
   }
